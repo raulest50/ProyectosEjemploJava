@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="1349.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.TrabajadoresController">
+    <stylesheets>
+        <URL value="@/virtualadministrator/estilo.css" />
+    </stylesheets>
+   <children>
+      <Accordion prefHeight="610.0" prefWidth="1349.0" stylesheets="@../estilo.css">
+        <panes>
+          <TitledPane animated="false" prefHeight="272.0" prefWidth="1349.0" text="Ingresar Empleado">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="36.0" layoutY="45.0" text="Nombres" />
+                        <Label layoutX="36.0" layoutY="104.0" text="Apellidos" />
+                        <Label layoutX="55.0" layoutY="163.0" text="Cedula" />
+                        <TextField layoutX="134.0" layoutY="39.0" prefHeight="39.0" prefWidth="343.0" />
+                        <TextField layoutX="116.0" layoutY="98.0" prefHeight="39.0" prefWidth="361.0" />
+                        <TextField layoutX="115.0" layoutY="157.0" prefHeight="39.0" prefWidth="363.0" />
+                        <Label layoutX="28.0" layoutY="219.0" text="Direccion" />
+                        <Label layoutX="26.0" layoutY="268.0" text="Telefono Fijo" />
+                        <Label layoutX="362.0" layoutY="268.0" text="Celular" />
+                        <Button layoutX="322.0" layoutY="420.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="135.0" text="Ingresar" />
+                        <Button layoutX="524.0" layoutY="419.0" mnemonicParsing="false" text="Borrar Campos" />
+                        <TextField layoutX="108.0" layoutY="213.0" prefHeight="39.0" prefWidth="309.0" />
+                        <TextField layoutX="132.0" layoutY="262.0" prefHeight="39.0" prefWidth="192.0" />
+                        <TextField layoutX="423.0" layoutY="262.0" prefHeight="39.0" prefWidth="270.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="610.0" prefWidth="1349.0" text="Buscar - Modificar Empleado">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+            <TitledPane animated="false" text="Vales - Calculo Quincena">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+   <stylesheets>
+       <URL value="@/virtualadministrator/estilo.css" />
+   </stylesheets>
+</AnchorPane>

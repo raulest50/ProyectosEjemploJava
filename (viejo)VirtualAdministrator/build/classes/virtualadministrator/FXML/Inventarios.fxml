@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" cacheShape="false" centerShape="false" minHeight="0.0" minWidth="0.0" prefHeight="610.0" prefWidth="1295.0" stylesheets="@../estilo.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.InventariosController">
+   <children>
+      <Button fx:id="BIniciar" layoutX="80.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#ClickIniciar" text="Iniciar Inventario" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="80.0" layoutY="53.0" text="Estado:" AnchorPane.leftAnchor="40.0" />
+      <Label fx:id="LEInventario" layoutX="138.0" layoutY="53.0" text="No Se Estan Haciendo Inventarios" AnchorPane.leftAnchor="140.0" />
+      <TableView fx:id="TVInventarios" layoutX="51.0" layoutY="198.0" prefHeight="281.0" prefWidth="496.0" AnchorPane.leftAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="TCNombre" prefWidth="495.0" text="Inventario" />
+        </columns>
+      </TableView>
+      <Button fx:id="BTerminar" layoutX="80.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#ClickTerminar" text="Terminar Inventario" AnchorPane.leftAnchor="40.0" />
+      <Button fx:id="BLiquidar" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#ClickLiquidar" text="Liquidar Inventario" AnchorPane.rightAnchor="500.0" />
+      <Label layoutY="106.0" text="Efectivo Mercancia :" AnchorPane.rightAnchor="220.0" />
+      <Label fx:id="LEfectivoMerca" layoutY="106.0" text="------------------------" AnchorPane.rightAnchor="30.0" />
+      <Label layoutY="144.0" text="Elementos Contados:" AnchorPane.rightAnchor="170.0" />
+      <Label fx:id="LContados" layoutY="144.0" prefHeight="28.0" prefWidth="76.0" text="----------" AnchorPane.rightAnchor="30.0" />
+      <Label layoutY="188.0" text="Conjunto mas caro:" AnchorPane.rightAnchor="170.0" />
+      <Label layoutY="223.0" text="Conteo mas numeroso:" AnchorPane.rightAnchor="170.0" />
+      <Label fx:id="LMasCaro" layoutY="188.0" text="----------" AnchorPane.rightAnchor="30.0" />
+      <Label fx:id="LMasNumeroso" layoutY="223.0" text="----------" AnchorPane.rightAnchor="30.0" />
+      <Button fx:id="BEliminar" layoutX="83.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#ClickEliminar" text="Eliminar Inventario" AnchorPane.leftAnchor="40.0" />
+      <Button fx:id="BCopiaEscritorio" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#ClickCopiaEscritorio" text="Hacer Copia De Seguridad En Escritorio" AnchorPane.rightAnchor="300.0" />
+      <Button fx:id="BCopiaCorreo" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#ClickCopiaCorreo" text="Enviar Copia De seguridad Al Correo" AnchorPane.rightAnchor="300.0" />
+      <Label layoutY="405.0" text="Correo:" AnchorPane.rightAnchor="500.0" />
+      <TextField fx:id="TFCorreo" layoutX="819.0" layoutY="399.0" prefHeight="39.0" prefWidth="254.0" AnchorPane.rightAnchor="200.0" />
+      <Button fx:id="BReactivar" layoutX="342.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#ClickReactivar" text="Reactivar Inventario" AnchorPane.leftAnchor="250.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

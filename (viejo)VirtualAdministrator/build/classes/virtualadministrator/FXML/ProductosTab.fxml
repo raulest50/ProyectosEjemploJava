@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPaneProductos" minHeight="0.0" minWidth="0.0" prefHeight="610.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/8" fx:controller="virtualadministrator.Controllers.ProductosController">
+    <children>
+        <Accordion layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="10.0">
+            <panes>
+                <TitledPane fx:id="TitledCodificarProdutos"  animated="false" text="Codificar Productos ">
+                    <content><fx:include fx:id="codificarTab" source="CodificarTab.fxml"/></content>
+                </TitledPane>
+                <TitledPane fx:id="TitledModificarProductos" animated="false" text="Modificar Productos ">
+                    <content><fx:include fx:id="modificarTab" source="ModificarTab.fxml"/></content>
+                </TitledPane>
+                <TitledPane fx:id="TitledRelaciones" animated="false" text="Relaciones Entre Productos" >
+                    <content><fx:include fx:id="relaciones" source="Relaciones.fxml"/></content>
+                </TitledPane>
+                <TitledPane fx:id="TitledAnalisis" animated="false" text="Analisis De Productos" >
+                    <content><fx:include fx:id="analisisProductos" source="AnalisisProductos.fxml"/></content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </children>
+    <stylesheets>
+        <URL value="@/virtualadministrator/estilo.css"/>
+    </stylesheets>
+</AnchorPane>

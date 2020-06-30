@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Info Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        Ensayo de las funciones del servlet info y soporte para desarrollador
+        <br><br>
+        ensayo productos
+        <form name="infoFp" action="info">
+            Busqueda:<input type="text" name="search" value="" size="77" />
+            <br>
+            Tipo De Busqueda:<input type="text" name="type" value="" size="77" />
+            <br>
+            Operacion:<input type="text" name="op" value="1" size="77" readonly="readonly" />
+            <br>
+            <input type="submit" value="ejecutar" name="submit" />
+        </form>
+        <br><br><br><br>
+        
+        ensayo clientes
+        <br><br>
+        <form name="infoFpr" action="info">
+            Busqueda:<input type="text" name="search" value="" size="77" />
+            <br>
+            Tipo De Busqueda:<input type="text" name="type" value="" size="77" />
+            <br>
+            Operacion:<input type="text" name="op" value="2" size="77" readonly="readonly" />
+            <br>
+            <input type="submit" value="ejecutar" name="submit" />
+        </form>
+        <br><br><br><br>
+        
+        busqueda proveedor
+        <br><br>
+        <form name="infoFpr" action="info">
+            Busqueda:<input type="text" name="search" value="" size="77" /><br>
+            Tipo De Busqueda:<input type="text" name="type" value="" size="77" /><br>
+            Operacion:<input type="text" name="op" value="3" size="77" readonly="readonly" /><br>
+            <input type="submit" value="ejecutar" name="submit" />
+        </form>
+        <br><br><br><br>
+        
+        Informacion Sobre Los Parametros:
+        <br>
+        search : String de busqueda<br>
+        <br><br><br>
+        op = 1 : busqueda de productos<br>
+            type = 1: por descripcion<br>
+            type = 2: por ultimos del codigo<br>
+            type = 3: por codigo exacto<br>
+            
+        <br><br>
+        op = 2 : busqueda de clientes<br>
+        
+        <br><br>
+        op = 3 : busqueda de proveedores<br>
+            type = 1: por nombre<br>
+            type = 2: por palabras clave<br>
+            type = 3: por codigo<br>
+            type = 4: por telefono<br>
+            
+    </body>
+</html>

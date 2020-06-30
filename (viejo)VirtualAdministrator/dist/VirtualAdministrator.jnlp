@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="VirtualAdministrator.jnlp">
+  <information>
+    <title>VirtualAdministrator</title>
+    <vendor>samsung</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="VirtualAdministrator.jar" size="2458112" download="eager" />
+    <jar href="lib/BDlib.jar" size="94759" download="eager" />
+    <jar href="lib/barbecue-1.5-beta1.jar" size="98666" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="860470" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="VirtualAdministrator" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="virtualadministrator.VirtualAdministrator"  name="VirtualAdministrator" />
+  <update check="always"/>
+</jnlp>

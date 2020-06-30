@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DBF2SQL_NG.jnlp">
+  <information>
+    <title>DBF2SQL_NG</title>
+    <vendor>erich</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DBF2SQL_NG.jar" size="14777" download="eager" />
+    <jar href="lib/jxl.jar" size="725735" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DBF2SQL_NG" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dbf2sql_ng.DBF2SQL_NG"  name="DBF2SQL_NG" />
+  <update check="always"/>
+</jnlp>

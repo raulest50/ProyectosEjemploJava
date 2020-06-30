@@ -1,0 +1,10 @@
+1. descargar mysql server de la pagina oficial
+2. descomprimir y exraer en un lugar apropiado como C:\\
+3. agregar en variables del sistema en path: ;C\\mysql\bin
+4.abrir cmd como administrador
+5. escribir mysqld --install
+
+y se debe imprimir instalacion exitosa.
+
+finalmente se accede al administrador de servicios de windows y se configura el sevicio para que 
+arranque automticamente y las operaciones en el servidor se realizan con mysql workbench.

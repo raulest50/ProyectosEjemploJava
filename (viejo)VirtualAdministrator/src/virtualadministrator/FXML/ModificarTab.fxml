@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor_Mod" minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="1348.0" stylesheets="@../estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.ModificarController">
+    
+    <children>
+        <TableView fx:id="TableVResultados" layoutX="1.0" layoutY="324.0" minHeight="130.0" minWidth="0.0" prefHeight="250.0" prefWidth="1348.0" stylesheets="@../estilo.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+            <columns>
+                <TableColumn fx:id="TCCodigo" prefWidth="180.0" text="Codigo" />
+                <TableColumn fx:id="TCDescripcion" prefWidth="373.0" text="Descripcion" />
+                <TableColumn fx:id="TCPvpublico" prefWidth="121.0" text="Pv Publico" />
+                <TableColumn fx:id="TCPvtienda" prefWidth="130.0" text="Pv Tienda" />
+                <TableColumn fx:id="TCCosto" prefWidth="98.0" text="Costo" />
+                <TableColumn fx:id="TCIva" prefWidth="34.0" text="Iva" />
+                <TableColumn fx:id="TCLastup" prefWidth="114.0" text="Last Up" />
+                <TableColumn fx:id="TCFamilia" prefWidth="171.0" text="Familia           " />
+            <TableColumn fx:id="TCStock" prefWidth="124.0" text="Stock" />
+            </columns>
+        </TableView>
+        <Label fx:id="LabEstadoBusqueda" layoutX="29.0" layoutY="97.0" text="---------" />
+        <TextField fx:id="TextFieldBuscar" layoutX="292.0" layoutY="38.0" onAction="#OnActionTexbuscar" prefHeight="39.0" prefWidth="407.0" />
+        <Label layoutX="200.0" layoutY="44.0" text=" Buscar :" />
+        <RadioButton fx:id="RadioBDescripcion" layoutX="972.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#OnClickRadioBdescri" text="Descripcion" />
+        <RadioButton fx:id="RadioBLastcod" layoutX="972.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#OnClickRadblastcod" text="Ultimos Codigo De Barras" />
+        <RadioButton fx:id="RadioBFullcod" layoutX="972.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#OnClickRadbcodeexact" text="Codigo Exacto" />
+        <Label layoutX="969.0" layoutY="30.0" text="Tipo De Busqueda" />
+        <Button fx:id="BotonBuscar" layoutX="293.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#OnClickBotonBuscar" prefHeight="42.0" prefWidth="227.0" text="Buscar" />
+        <Button fx:id="BotonBorrar" layoutX="538.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#OnClickBotonBorrar" prefHeight="43.0" prefWidth="141.0" text="Borrar Campo" />
+        <Button fx:id="BotonModificar" layoutX="716.0" layoutY="38.0" mnemonicParsing="false" onMouseClicked="#OnClickBotonModificar" prefHeight="29.0" prefWidth="125.0" text="Modificar" />
+      <Button fx:id="BotonBarras" layoutX="706.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#OnClickBotonBarras" text="Generar Codigo Barras" />
+    </children>
+    <stylesheets>
+        <URL value="@/virtualadministrator/estilo.css" />
+    </stylesheets>
+</AnchorPane>

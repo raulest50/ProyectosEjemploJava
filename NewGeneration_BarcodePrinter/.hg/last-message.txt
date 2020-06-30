@@ -1,0 +1,1 @@
+se agrego metodo para obtener la fecha actual pero aun no se ha agregado en el sticker con los comandos nativos de la imrpesora.

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Class D">
+  <ClassDiagramComponents>
+    <Class name="Pinger" package="" visibility="public" xPosition="41.0" yPosition="229.0">
+      <Fields>
+        <Field name="initip" type="String" visibility="private"/>
+        <Field name="finip" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Hacer_Pings_in_range" returnType="void" visibility="public"/>
+        <Method name="Pinger" returnType="Pinger" visibility="public">
+          <Argument type="String" name="initip"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Thread" package="" visibility="public" xPosition="335.0" yPosition="24.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="run" returnType="void" visibility="public"/>
+        <Method name="start" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Single_Ping" package="" visibility="public" xPosition="361.0" yPosition="229.0">
+      <Fields>
+        <Field name="ipdir" type="String" visibility="private"/>
+        <Field name="duracion" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="hacer_ping" returnType="String" visibility="public"/>
+        <Method name="Single_Ping" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name=" tiene N" source="Pinger" target="Single_Ping" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="Single_Ping" target="Thread"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

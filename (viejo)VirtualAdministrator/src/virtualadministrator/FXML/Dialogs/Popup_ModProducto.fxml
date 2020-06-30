@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="1131.0" stylesheets="@../../estilo.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.Dialogs.Popup_ModProductoController">
+   <children>
+      <Label layoutX="205.0" layoutY="27.0" styleClass="Titulo2" stylesheets="@../../estilo.css" text="Modificacion De Productos" AnchorPane.leftAnchor="430.0" AnchorPane.topAnchor="30.0" />
+      <Label layoutX="22.0" layoutY="159.0" stylesheets="@../../estilo.css" text="Descripcion :" AnchorPane.leftAnchor="20.0" />
+      <TextField fx:id="TFDescripcion" layoutX="152.0" layoutY="153.0" prefHeight="39.0" prefWidth="651.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="26.0" layoutY="262.0" stylesheets="@../../estilo.css" text="Costo :" AnchorPane.leftAnchor="20.0" />
+      <Label layoutX="24.0" layoutY="470.0" stylesheets="@../../estilo.css" text="PV publico : " AnchorPane.leftAnchor="20.0" />
+      <Label layoutX="26.0" layoutY="301.0" stylesheets="@../../estilo.css" text="Costo Actual :" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="LCosto" layoutX="158.0" layoutY="301.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="22.0" layoutY="352.0" stylesheets="@../../estilo.css" text="PV tienda :" AnchorPane.leftAnchor="20.0" />
+      <Label layoutX="23.0" layoutY="392.0" stylesheets="@../../estilo.css" text="PV Tienda Actual: " AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="LTienda" layoutX="173.0" layoutY="392.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="190.0" />
+      <Label layoutX="22.0" layoutY="204.0" stylesheets="@../../estilo.css" text="Descripcion Actual :" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="LDescripcion" layoutX="193.0" layoutY="204.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="200.0" />
+      <TextField fx:id="TFCosto" layoutX="94.0" layoutY="256.0" prefHeight="39.0" prefWidth="224.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="100.0" />
+      <TextField fx:id="TFPublico" layoutX="123.0" layoutY="464.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="130.0" />
+      <TextField fx:id="TFTienda" layoutX="123.0" layoutY="346.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="130.0" />
+      <Label layoutX="26.0" layoutY="512.0" stylesheets="@../../estilo.css" text="PV publico Actual :" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="LPublico" layoutX="193.0" layoutY="511.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="190.0" />
+      <Label layoutX="447.0" layoutY="431.0" stylesheets="@../../estilo.css" text="Iva :" AnchorPane.leftAnchor="430.0" />
+      <Label layoutX="447.0" layoutY="470.0" stylesheets="@../../estilo.css" text="Iva Actual :" AnchorPane.leftAnchor="430.0" />
+      <TextField fx:id="TFIva" layoutX="495.0" layoutY="424.0" prefHeight="39.0" prefWidth="110.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="500.0" />
+      <Label fx:id="LIva" layoutX="558.0" layoutY="470.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="550.0" />
+      <Label layoutX="23.0" layoutY="106.0" stylesheets="@../../estilo.css" text="Ultima Actualizacion :" AnchorPane.leftAnchor="20.0" />
+      <Label fx:id="LUltimaAct" layoutX="206.0" layoutY="106.0" stylesheets="@../../estilo.css" text="Label" />
+      <Button fx:id="BCancelar" layoutX="28.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#ClickedButtonCancelar" prefHeight="64.0" prefWidth="157.0" stylesheets="@../../estilo.css" text="Cancelar" AnchorPane.bottomAnchor="15.0" />
+      <Button fx:id="BGuardar" layoutX="220.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#ClickedButtonGuardar" prefHeight="64.0" prefWidth="254.0" stylesheets="@../../estilo.css" text="Guardar Modificaciones" AnchorPane.bottomAnchor="15.0" />
+      <Button fx:id="BReset" layoutX="734.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#ClickedButtonReset" prefHeight="64.0" prefWidth="110.0" stylesheets="@../../estilo.css" text="Reset" AnchorPane.bottomAnchor="15.0" />
+      <Label layoutX="430.0" layoutY="328.0" stylesheets="@../../estilo.css" text="Codigo :" AnchorPane.leftAnchor="430.0" />
+      <Label layoutX="430.0" layoutY="366.0" stylesheets="@../../estilo.css" text="Codigo Actual :" AnchorPane.leftAnchor="430.0" />
+      <TextField fx:id="TFCodigo" layoutX="509.0" layoutY="322.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="510.0" />
+      <Label fx:id="LCodigo" layoutX="579.0" layoutY="366.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="580.0" />
+      <Label layoutX="621.0" layoutY="249.0" stylesheets="@../../estilo.css" text="Familia" AnchorPane.leftAnchor="540.0" />
+      <Label layoutX="567.0" layoutY="282.0" stylesheets="@../../estilo.css" text="Familia Actual :" AnchorPane.leftAnchor="540.0" />
+      <Label fx:id="LFamilia" layoutX="694.0" layoutY="282.0" prefHeight="28.0" prefWidth="224.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="700.0" />
+      <ComboBox fx:id="ComboFamilia" layoutX="687.0" layoutY="243.0" prefHeight="39.0" prefWidth="295.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="630.0" />
+      <Button layoutX="505.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#ClickedButtonEliminar" prefHeight="64.0" prefWidth="210.0" stylesheets="@../../estilo.css" text="Eliminar Producto" AnchorPane.bottomAnchor="15.0" />
+      <Label layoutX="732.0" layoutY="437.0" stylesheets="@../../estilo.css" text="Stock" AnchorPane.leftAnchor="730.0" />
+      <Label layoutX="733.0" layoutY="477.0" stylesheets="@../../estilo.css" text="Stock Actual:" AnchorPane.leftAnchor="730.0" />
+      <Label fx:id="LStock" layoutX="859.0" layoutY="477.0" stylesheets="@../../estilo.css" text="Label" AnchorPane.leftAnchor="870.0" />
+      <TextField fx:id="TFStock" layoutX="789.0" layoutY="430.0" stylesheets="@../../estilo.css" AnchorPane.leftAnchor="800.0" />
+   </children>
+</AnchorPane>

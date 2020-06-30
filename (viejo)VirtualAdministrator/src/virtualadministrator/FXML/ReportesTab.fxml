@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor_Rep" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@../estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.ReportesController">
+    <children>
+        <TableView layoutX="110.0" layoutY="299.0" prefHeight="441.0" prefWidth="1347.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+            <columns>
+                <TableColumn prefWidth="366.0" text="Nombre Producto" />
+                <TableColumn prefWidth="647.0" text="Descripcion o Comentarios" />
+                <TableColumn prefWidth="313.0" text="Last Up" />
+            </columns>
+        </TableView>
+        <Button layoutX="40.0" layoutY="43.0" mnemonicParsing="false" text="Cargar Lista" />
+        <Button layoutX="1052.0" layoutY="43.0" mnemonicParsing="false" text="Eliminar todos Los Elementos" />
+        <Button layoutX="1052.0" layoutY="109.0" mnemonicParsing="false" text="Eliminar Seleccionados" />
+    </children>
+    <stylesheets>
+        <URL value="@/virtualadministrator/estilo.css" />
+    </stylesheets>
+</AnchorPane>

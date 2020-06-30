@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inventario testing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        pagina Html para hacer ensayos y troubleshooting del servlet de inventarios<br>
+        <br>
+        <br>
+        <br>
+        Ingreso conteo
+        <form name="fi1" action="i">
+            Codigo:<input type="text" name="c" value="" size="77" /><br>
+            ID:<input type="text" name="id" value="0" size="77" readonly="readonly" /><br>
+            Nombre:<input type="text" name="name" value="" size="77" /><br>
+            N:<input type="text" name="N" value="" size="77" /><br>
+            Lugar:<input type="text" name="lugar" value="" size="77" /><br>
+            IdContador:<input type="text" name="idcon" value="" size="77"/><br>
+            Operacion : <input type="text" name="op" value="1" size="77" readonly="readonly"/><br>
+            <input type="submit" value="Ejecutar" name="subf1" />
+        </form>
+        
+        <br>
+        <br>
+        <br>
+        Eliminacion Conteo<br>
+        <form name="fi2" action="i">
+            ID:<input type="text" name="id" value="0" size="77" /><br>
+            Operacion : <input type="text" name="op" value="2" size="77" readonly="readonly"/><br>
+            <input type="submit" value="Ejecutar" name="subf2" />
+        </form>
+        <br>
+        <br>
+        <br>
+        <form name="fi3" action="i">
+            Codigo:<input type="text" name="c" value="" size="77" /><br>
+            ID:<input type="text" name="id" value="0" size="77" /><br>
+            Nombre:<input type="text" name="name" value="" size="77" /><br>
+            N:<input type="text" name="N" value="" size="77" /><br>
+            Lugar:<input type="text" name="lugar" value="" size="77" /><br>
+            IdContador:<input type="text" name="idcon" value="" size="77"/><br>
+            Operacion : <input type="text" name="op" value="3" size="77" readonly="readonly"/><br>
+            <input type="submit" value="Ejecutar" name="subf3" />
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        op = 1 agregar conteo<br>
+        c: codigo del producto<br>
+        id: primary key conteo<br>
+        name: nombre del producto<br>
+        N: numero de elementos contados de dicho producto<br>
+        lugar: Lugar donde se realizo el conteo<br>
+        idcon: identificacion de quein realiza el conteo<br>
+        <br>
+        <br>
+        op = 2 eliminar conteo<br>
+        id: primary key de los conteos<br>
+        <br>
+        <br>
+        op = 3 modificar conteo<br>
+        igual que en op = 1<br>
+        op = 4 traer la lista del contador<br>
+        idcon: identificacion de quien realizo el conteo ( un String, nombre comun)<br>
+        respuesta--- un conteo con los datos en el  mismo orden que se presenta aqui<br>
+        codigo<br>
+        costo<br>
+        nombre<br>
+        id: llave primaria de la tabla de sql <br>
+        lugar donde se realizo el conteo ( se establece desde el dispositivo movil)<br>
+        cantidad de elementos contados<br>
+        time: instante de tiempo en que el producto fue agreagdo a la tabla.<br>
+    </body>
+</html>

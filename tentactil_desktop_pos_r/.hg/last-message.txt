@@ -1,0 +1,1 @@
+se argrego checkbox en la seccion de abonos y devoluciones que permite que la impresion de comprobante de factura sea opcional. (falta test en equipo de despliegue).

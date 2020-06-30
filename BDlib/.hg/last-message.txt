@@ -1,0 +1,1 @@
+hice correcciones de bugs en el conector a la tabla de configuracion.

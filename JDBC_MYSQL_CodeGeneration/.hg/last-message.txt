@@ -1,0 +1,3 @@
+En la generacion del obj se agrego la generacion del constructor por defecto que asigna uno a uno los parametros con los atributos de la clase.
+
+falta agregar para el caso de los spt el constructor que recive los parametros normales y los pasa a spt.

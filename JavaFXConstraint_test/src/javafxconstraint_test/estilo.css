@@ -1,0 +1,237 @@
+
+/* 
+    Created on : 6/01/2015, 07:45:40 AM
+    Author     : esteban
+*/
+
+/**
+para usar fuentes especiales para las letras se usa en el main:
+Font.loadFont(VirtualAdministrator.class.getResource("belligerent.ttf").toExternalForm(), 10);
+
+luego en el css se pone:
+Label.Titulo1{
+    -fx-font-family: "Beligerent Madness";
+    -fx-font-size:38;
+}
+
+en -fx-font-family: no se pone el nombre del archivo sino el nombre 
+real de la fuente. para saberlo se debe abrir el archivo ttf.
+*/
+Label.Titulo1{
+    -fx-font-family: "EXO";
+    -fx-font-size: 60;
+}
+
+// para los labels que sirven de titulo
+Label.Titulo2{
+    -fx-font: 24px fantasy;
+}
+
+Label {
+    -fx-font: 19px fantasy;
+    
+}
+
+TextField{
+    -fx-font: 19px fantasy;
+}
+
+TextArea{
+    -fx-font: 19px fantasy;
+}
+
+ComboBox{
+    -fx-font: 19px fantasy;
+}
+
+Tab{
+    -fx-font: 20px fantasy;
+}
+
+TitledPane{
+    -fx-font: 19px fantasy;
+}
+
+TableView{
+    -fx-font: 19px fantasy;
+}
+
+TableColumn{
+    -fx-font:19px fantasy;
+}
+// estilizado para botones.
+// este estilizzado es relevante porque de alguna manera indica la importancia de
+//  la accion asociada a cada boton dentro de la interfaz.
+
+
+Button.c1{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #a5d3fb 50%, #88c6fb 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 18px;
+}
+
+/**
+cuando se establece un estilizado personalizado a ciertos objetos como los 
+botones, se pierde los demas estilizados segun el estado. ej:
+por defecto un boton cambia su apariencia cuando se le da click o cuando el
+puntero del mouse pasa por encima.
+
+por eso es necesario para la clase c1 redefinir :hover (cuando el puntero del
+mouse pasa por encima) y :pressed (cuando se le da click al boton.)
+*/
+
+Button.c1:hover{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#2090D5, #0404FD),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #18E2D8 50%, #18E2D8 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 18px;
+}
+
+Button.c1:pressed{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#2090D5, #0404FD),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #0A0EFF 50%, #090CEC 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 18px;
+}
+
+Button.c2{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#FFFD8A 0%,#FAF761 10%, #FAF761 50%, #E8E533 51%, #DBD827 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 18px;
+}
+
+
+Button.c3{
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#F5291B 0%,#F5291B 10%, #FF7E75 50%, #F5291B 51%, #F5291B 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 19px;
+}
+
+Button{
+    -fx-font-size: 19px;
+}
+
+
+// for TableView
+
+/* Selected row table focused*/
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #ffcccc;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: black;
+}
+
+.table-view{
+    -fx-background-color: #eaeafd; 
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:selected {
+    -fx-background-color: #ffcccc;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: black;
+}
+
+/* la fila seleccionada se pone en rosado
+/* la fila sobre la que este el mouse se pone de color bisque a menos
+/* de que se trate de la fila seleccionada 
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: bisque;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+/* Selected row hovered table focused*/
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: #ffcccc;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+
+/* Selected row hovered when table not focused */
+
+
+.table-view:row-selection .table-row-cell:filled:hover:selected {
+    -fx-background-color: #ffcccc;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+// para el anchor pane principal de la aplicacion (aplica a todos los componentes dentro de este pane)
+AnchorPane {
+    -fx-background-color: #eaeafd;
+}
+
+dialog-pane {
+    -fx-background-color: red;
+}
+
+//para los menu que salen con click derecho.
+.rgcmenu{
+    -fx-background-color: linen;
+    -fx-font: 19px fantasy;
+}
+
+//para la barra de herramientas
+.Barra_Menu{
+    -fx-font: 19px fantasy;
+}
+
+/**
+esta es la forma tradicional de incluir fuentes especiales pero
+javafx aun no la soporta. 
+//fuentes de letra especiales
+@font-face{
+	font-family: beli;
+	src: url("virtualadministrator\belligerent.ttf");
+}
+
+@font-face{
+	font-family: beer;
+	src: url("virtualadministrator\beer_money.ttf");
+}
+
+@font-face{
+	font-family: champ;
+	src: url("virtualadministrator\cac_champagne.ttf");
+}
+
+@font-face{
+	font-family: pexi;
+	src: url("virtualadministrator\plexifont.ttf");
+}
+*/

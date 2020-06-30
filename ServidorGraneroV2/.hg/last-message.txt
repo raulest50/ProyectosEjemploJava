@@ -1,0 +1,1 @@
+Se actualizo que el numero de lineas de la factura y el encabezado se obtuvieran de la tabla de configuracion en lugar de la api de preferencias. se adicionaron los correspondieste try catch y throws por exccepcion de sql.

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="GrandPa" minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="1350.0" styleClass="mainFxmlClass" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.FXMLVirtualAdministratorController">
+    
+    <children>
+        
+        <MenuBar id="BarraMenu" fx:id="BarraMenu" layoutY="2.0" prefHeight="38.0" prefWidth="1350.0" styleClass="Barra_Menu" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Copias De Seguridad">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#GenerarDump" text="Generar Copia De Seguridad" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AcercaPrograma" text="Acerca Del Programa" />
+                  <MenuItem mnemonicParsing="false" onAction="#AcercaCopiaSeguridad" text="Acerca De Las Copias De Seguridad" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        
+        <!-- tabs  -->
+             
+        <TabPane fx:id="Tabpane_Principal" layoutX="1.0" layoutY="40.0" prefHeight="649.0" prefWidth="1349.0" styleClass="tab_principal" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <tabs>
+                
+                <!-- tab proveedores -->
+                <Tab id="TabProveedores" fx:id="TabProveedores" text="Proveedores  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="proveedoresTab" source="FXML/ProveedoresTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+    AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                <Tab id="TabProductos" fx:id="TabProductos" onSelectionChanged="#CodiTabChan" text="Productos ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="productosTab" source="FXML/ProductosTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+    AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                    
+                <!--    
+                
+                <Tab id="TabCodificar" fx:id="TabCodificar" onSelectionChanged="#CodiTabChan" text="Productos">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="codificar" source="FXML/CodificarTab.fxml" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                    
+                    
+                
+                <Tab id="TabModificar" fx:id="TabModificar" text="Modificar Producto">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="modificar" source="FXML/ModificarTab.fxml" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                -->
+                
+                
+                <!-- tab de agotados -->
+                <Tab id="TabReportes" fx:id="TabReportes" text="Reportes Agotados">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="reportesTab" source="FXML/ReportesTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                
+                <!-- Tab de Trabajadores -->
+                <Tab id="TabTrabajadores" fx:id="TabTrabajadores" text="Equipo De Trabajo">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="trabajadoresTab" source="FXML/TrabajadoresTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                
+                <!-- Tab de Configuracion -->
+                <Tab id="TabConfiguracion" fx:id="TabConfiguracion" text="Configuracion">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="configTab" source="FXML/ConfigTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                <!-- Tab de Clientes -->
+                <Tab id="TabClientes" fx:id="TabClientes" text="Clientes">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="clientes" source="FXML/Clientes.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                <!-- Tab de Inventarios -->
+                <Tab id="TabInventarios" fx:id="TabInventarios" text="Inventarios">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="inventarios" source="FXML/Inventarios.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                
+                <!-- Tab de Ventas -->
+                <Tab id="TabVentas" fx:id="TabVentas" text="Ventas">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610" prefWidth="1348">
+                            <children>
+                                <fx:include fx:id="ventasTab" source="FXML/VentasTab.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                            AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab> 
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
+
+
+<!-- 
+
+cuando se usa constraints con el anchor pane se pueden hacer interfaces de java fx que
+se ajusten mas facil a cambios del tamaño de la pantalla
+
+sin embargo cuando se usa un include las constraints se pierden
+
+agregando esto:
+
+AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+    AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+    
+    
+    se recuperan.
+    
+de esta forma al cambiar el taño de la ventana los elementos de la ui
+se deplazan para asegurar una distancia fija al margen -->

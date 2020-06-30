@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.Controllers.ClientesController">
+   <children>
+      <Accordion prefHeight="610.0" prefWidth="1348.0">
+        <panes>
+          <TitledPane animated="false" text="Ingresar Cliente">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="TFCodigo" layoutX="119.0" layoutY="54.0" onAction="#ActionTFCodigo" prefHeight="39.0" prefWidth="153.0" />
+                        <Label layoutX="43.0" layoutY="60.0" text="Codigo" />
+                        <Label layoutX="43.0" layoutY="111.0" text="Nombre Completo:" />
+                        <Label layoutX="43.0" layoutY="166.0" text="Apodo:" />
+                        <Label layoutX="43.0" layoutY="222.0" text="Direccion:" />
+                        <Label layoutX="43.0" layoutY="273.0" text="Telefono Fijo:" />
+                        <Label layoutX="43.0" layoutY="324.0" text="Celular:" />
+                        <TextField fx:id="TFNombre" layoutX="203.0" layoutY="105.0" onAction="#ActionTFNombre" prefHeight="39.0" prefWidth="295.0" />
+                        <TextField fx:id="TFApodo" layoutX="119.0" layoutY="160.0" onAction="#ActionTFApodo" prefHeight="39.0" prefWidth="295.0" />
+                        <TextField fx:id="TFDireccion" layoutX="137.0" layoutY="216.0" onAction="#ActionTFDireccion" prefHeight="39.0" prefWidth="297.0" />
+                        <TextField fx:id="TFFijo" layoutX="167.0" layoutY="267.0" onAction="#ActionTFFijo" prefHeight="39.0" prefWidth="173.0" />
+                        <TextField fx:id="TFCel" layoutX="122.0" layoutY="318.0" onAction="#ActionTFCel" prefHeight="39.0" prefWidth="237.0" />
+                        <Button fx:id="BAgregar" layoutX="93.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#ClickAgregar" text="Agregar Cliente" />
+                        <Button fx:id="BBorrar" layoutX="304.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#ClickBorrar" text="Borrar Campos" />
+                        <Button fx:id="BCargar" layoutX="859.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#ClickCargar" text="Cargar Imagen" />
+                        <ImageView fitHeight="309.0" fitWidth="365.0" layoutX="751.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" text="Buscar/ Modificar / Borrar Clientes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="TFBuscar" layoutX="228.0" layoutY="25.0" onAction="#ActionBuscar" />
+                        <Label layoutX="166.0" layoutY="31.0" text="Buscar:" />
+                        <Label fx:id="LEstado" layoutX="103.0" layoutY="83.0" text="Resultados:" />
+                        <TableView fx:id="TVClientes" layoutX="80.0" layoutY="127.0" prefHeight="374.0" prefWidth="1159.0">
+                          <columns>
+                            <TableColumn fx:id="TCCodigo" prefWidth="112.0" text="Codigo" />
+                            <TableColumn fx:id="TCNombre" prefWidth="148.0" text="Nombre" />
+                              <TableColumn fx:id="TCApodo" prefWidth="177.0" text="Apodo" />
+                              <TableColumn fx:id="TCDireccion" prefWidth="245.0" text="Direccion" />
+                              <TableColumn fx:id="TCFijo" prefWidth="203.0" text="Telefono Fijo" />
+                              <TableColumn fx:id="TCCelular" prefWidth="273.0" text="Celular" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="BModificar" layoutX="715.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ClickModificar" text="Modificar" />
+                        <Button fx:id="BBorrar2" layoutX="862.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ClickBorrar2" text="Borrar" />
+                        <Button fx:id="BBuscar" layoutX="528.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ClickBuscar" text="Buscar" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+   <stylesheets>
+       <URL value="@/virtualadministrator/estilo.css"/>
+   </stylesheets>
+</AnchorPane>

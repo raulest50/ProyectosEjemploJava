@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NewGeneration_BarcodePrinter.jnlp">
+  <information>
+    <title>NewGeneration_BarcodePrinter</title>
+    <vendor>erich</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NewGeneration_BarcodePrinter.jar" size="16700" download="eager" />
+    <jar href="lib/barcode4j.jar" size="274404" download="eager" />
+    <jar href="lib/jna.jar" size="946973" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="newgeneration_barcodeprinter.NewGeneration_BarcodePrinter"  name="NewGeneration_BarcodePrinter" />
+  <update check="always"/>
+</jnlp>

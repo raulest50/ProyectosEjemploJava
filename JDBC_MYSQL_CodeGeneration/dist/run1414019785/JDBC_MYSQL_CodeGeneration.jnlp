@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JDBC_MYSQL_CodeGeneration.jnlp">
+    <information>
+        <title>JDBC_MYSQL_CodeGeneration</title>
+        <vendor>erich</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JDBC_MYSQL_CodeGeneration.jar" size="17840" download="eager"/>
+        <jar href="lib\javapoet-1.11.0.jar" size="98628" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="jdbc_pst_insertgenerator.JDBC_CodeGenerator" name="JDBC_CodeGenerator"/>
+</jnlp>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="virtualadministrator.ModalLizController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="359.0" layoutY="34.0" styleClass="Titulo2" text="Herramienta para Licenciamiento " />
+      <Label layoutX="102.0" layoutY="147.0" text="Usuario" />
+      <Label layoutX="102.0" layoutY="222.0" text="Clave" />
+      <Label fx:id="LAns" layoutX="88.0" layoutY="316.0" text="-------------------------------------" />
+      <TextField fx:id="TFUsuario" layoutX="191.0" layoutY="140.0" prefHeight="42.0" prefWidth="290.0" />
+      <TextField fx:id="TFClave" layoutX="191.0" layoutY="215.0" prefHeight="42.0" prefWidth="290.0" />
+      <Button fx:id="BDescargar" layoutX="600.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#onClickLic" text="Descargar Licencia" />
+   </children>
+</AnchorPane>
